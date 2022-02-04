@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <title>DASHBOARD - Gestión de usuarios</title>
+</head>
+<body>
+    <!--- Menu Movil-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light w-25 p-1 d-block d-sm-block d-md-none w-100">
+        <div class="container-fluid justify-content-left">
+          <a class="navbar-brand" href="#">Menu </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><img class="icon-menu" src="img/Dashboard.png" alt="Dashboard">&nbsp;Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img class="icon-menu" src="img/Users.png" alt="Usuarios">&nbsp;Usuarios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled"><img class="icon-menu" src="img/Products.png" alt="Productos">&nbsp;Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled"><img class="icon-menu" src="img/Grafico.png" alt="Grafico">&nbsp;Gráfico</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled"><img class="icon-menu" src="img/Informes.png" alt="Informes">&nbsp;Informes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled"><img class="icon-menu" src="img/Logout.png" alt="Logout">&nbsp;Cerrar Sesion</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+      <!--- Menu Movil-->
+    <div class="d-flex flex-row">
+       
+        <!--- Barra lateral Escritorio-->
+        <div class="bg-white d-none d-sm-none d-md-block d-flex flex-row">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold">
+                MI TIENDA OUTLET
+            </div>
+            <div class="list-group list-group-flush my-3">
+                <a href="#" class="list-group-item list-group-item-action bg-primary second-text active">
+                    Dashboard </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    Usuarios </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    Productos </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    Graficos </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    Informes </a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
+                    Cerrar sesión </a>
+            </div>
+        </div>
+        <!--- Barra lateral Escritortio-->
+        
+      
+
+        
+        <div id="main-page" class="container-fluid vh-100">
+        <!--- Dashboard-->
+            <h2 class="my-3">Dashboard</h2>
+        <!--- Dashboard Escritorio-->
+            <div class="row d-none d-sm-none d-md-block">
+                <div class="col card shadow m-3 callout-info">
+                    <div class="card-body">
+                        <p class="fw-bold text-info"> INGRESOS (Anual)</p>
+                        <h3>1300,00 €</h3>
+                    </div></div>
+                <div class="col card shadow m-3 callout-primary">
+                    <div class="card-body">
+                        <p class="fw-bold text-primary">GASTOS (Anual)</p>
+                        <h3>1000,00 €</h3>
+                    </div></div>
+                <div class="col card shadow m-3 callout-success">
+                    <div class="card-body">
+                        <p class="fw-bold text-success">BENEFICIOS (Anual)</p>
+                        <h3>300,00 </h3>
+                    </div>
+                </div>
+            </div>
+        <!--- Dashboard Escritorio-->
+
+        <!--- Dashboard Movil-->
+         <div class="row d-block d-sm-block d-md-none">
+            <div class="col card shadow m-3 callout-info">
+                <div class="card-body">
+                    <p class="fw-bold text-info"> INGRESOS (Anual)</p>
+                    <h3>1300,00 €</h3>
+                </div></div>
+            <div class="col card shadow m-3 callout-primary">
+                <div class="card-body">
+                    <p class="fw-bold text-primary">GASTOS (Anual)</p>
+                    <h3>1000,00 €</h3>
+                </div></div>
+            <div class="col card shadow m-3 callout-success">
+                <div class="card-body">
+                    <p class="fw-bold text-success">BENEFICIOS (Anual)</p>
+                    <h3>300,00 </h3>
+                </div>
+            </div>
+        </div>
+        <!--- Dashboard Movil-->
+
+        <!--- Productos -->
+            <h2 class="my-3">Productos </h2>
+        <!--- Productos Escritorio -->
+            <div class="card shadow d-none d-sm-none d-md-block">
+                <div class="card-header fw-bold">Productos más vendidos</div>
+                <div class="card-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>IMAGEN</th>
+                                <th>VENTAS</th>
+                                <th>CÓDIGO</th>
+                                <th>PRODUCTO</th>
+                                <th>PRECIO UNIDAD</th>
+                                <th>CATEGORÍA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="align-middle">
+                                <td><img src="./img/xiaomi.png" alt="Xiaomi Redmi Note 9 Pro 6/64GB Verde Tropical"></td>
+                                <td >1232</td>
+                                <td>299423</td>
+                                <td>Xiaomi Redmi Note 9 Pro 6/64GB Verde Tropical</td>
+                                <td>250,25 €</td>
+                                <td><span class="btn btn-primary rounded-pill">Smartphone</span></td>
+                            </tr>
+                            <tr class="align-middle">
+                                <td><img src="./img/pantalla.png" alt="NewSkill Icarus RGB 27 LED Fast IPS QHD 180Hz G-Sync Compatible"></td>
+                                <td >1000</td>
+                                <td>414013</td>
+                                <td>NewSkill Icarus RGB 27" LED Fast IPS QHD 180Hz G-Sync Compatible</td>
+                                <td>343,98 €</td>
+                                <td><span class="btn btn-primary rounded-pill">Monitores</span></td>
+                            </tr>
+                            <tr class="align-middle">
+                                <td><img src="./img/mouse.png" alt="Tempest X20W Vigilant Raton Gaming Inalámbrico"></td>
+                                <td >855</td>
+                                <td>433507</td>
+                                <td>Tempest X20W Vigilant Raton Gaming Inalámbrico</td>
+                                <td>49,99 €</td>
+                                <td><span class="btn btn-primary rounded-pill">Periféricos</span></td>
+                            </tr>
+                            <tr class="align-middle">
+                                <td><img src="./img/webcam.png" alt="Logitech C920s Pro Webcam"></td>
+                                <td >711</td>
+                                <td>258324</td>
+                                <td>Logitech C920s Pro Webcam</td>
+                                <td>75,99 €</td>
+                                <td><span class="btn btn-primary rounded-pill">Periféricos</span></td>
+                            </tr>
+                            <tr class="align-middle">
+                                <td><img src="./img/torre.png" alt="Tempest Vapor USB 3.0 Ventana RGB Negro"></td>
+                                <td >425</td>
+                                <td>386825</td>
+                                <td>Tempest Vapor USB 3.0 Ventana RGB Negro</td>
+                                <td>56,99 €</td>
+                                <td><span class="btn btn-primary rounded-pill">Componentes</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div> 
+             <!--- Productos Escritorio --> 
+
+            <!--- Productos Movil -->
+
+            <div class="card mb-3 d-block d-sm-block d-md-none" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4 d-flex flex-row">
+                      <img src="./img/xiaomi.png" class="img-fluid rounded-start" alt="...">
+                      <h5 class="card-title p-2">Xiaomi Redmi Note 9 Pro 6/64GB Verde Tropical</h5>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">250,25 €</h5>
+                        <button type="button" class="btn btn-primary">Smartphone</button>
+                        <p class="card-text"><small class="text-muted">Ventas: 1232 Código: 299423</small></p>
+                      </div>
+                    </div>
+                  </div>
+                <div class="row g-0">
+                    <div class="col-md-4 d-flex flex-row">
+                      <img src="./img/pantalla.png" class="img-fluid rounded-start" alt="...">
+                      <h5 class="card-title p-2">NewSkill Icarus RGB 27" LED Fast IPS QHD 180Hz G-Sync Compatible</h5>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">343,98 €</h5>
+                        <button type="button" class="btn btn-primary">Monitores</button>
+                        <p class="card-text"><small class="text-muted">Ventas: 1000 Código: 414013</small></p>
+                      </div>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-md-4 d-flex flex-row">
+                      <img src="./img/mouse.png" class="img-fluid rounded-start" alt="...">
+                      <h5 class="card-title p-2">Tempest X20W Vigilant Raton Gaming Inalámbrico</h5>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">49,99 €</h5>
+                        <button type="button" class="btn btn-primary">Periféricos</button>
+                        <p class="card-text"><small class="text-muted">Ventas: 855 Código: 433507</small></p>
+                      </div>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-md-4 d-flex flex-row">
+                      <img src="./img/webcam.png" class="img-fluid rounded-start" alt="...">
+                      <h5 class="card-title p-2">Logitech C920s Pro Webcam</h5>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">75,99 €</h5>
+                        <button type="button" class="btn btn-primary">Periféricos</button>
+                        <p class="card-text"><small class="text-muted">Ventas: 711 Código: 258324</small></p>
+                      </div>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-md-4 d-flex flex-row">
+                      <img src="./img/torre.png" class="img-fluid rounded-start" alt="...">
+                      <h5 class="card-title p-2">Tempest Vapor USB 3.0 Ventana RGB Negro</h5>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">56,99 €</h5>
+                        <button type="button" class="btn btn-primary">Componentes</button>
+                        <p class="card-text"><small class="text-muted">Ventas: 425 Código: 386825</small></p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            <!--- Productos Movil -->
+        </div>
+   
+   </div>
+   <footer class="text-center fw-bold bg-dark p-4 text-white d-none d-sm-none d-md-block">Copyright © 2020</footer>
+   
+</body>
+</html>
